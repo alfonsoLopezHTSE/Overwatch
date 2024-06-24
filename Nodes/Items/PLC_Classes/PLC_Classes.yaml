@@ -1,0 +1,9 @@
+Name: PLC Classes
+Type: FolderType
+Children:
+- Name: PLC_Class_Simple
+  Type: NetLogic
+- Name: PLC_Class_Modbus
+  Type: NetLogic
+- Name: PLC_Class_OPCUA
+  Type: NetLogic
