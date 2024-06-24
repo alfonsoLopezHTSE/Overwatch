@@ -1,0 +1,21 @@
+Name: Main
+Type: FolderType
+Children:
+- Name: System
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "746b1920c67426b094c78f414c496290"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: System
+    Id: g=74e10dcfa3a248efe883c9be22eba6cb
+    Supertype: BaseObjectType
+    Children:
+    - Name: Running
+      Type: BaseDataVariableType
+      DataType: Boolean

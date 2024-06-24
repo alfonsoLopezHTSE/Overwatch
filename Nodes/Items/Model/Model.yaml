@@ -1,0 +1,5 @@
+Name: Model
+Type: FolderType
+Children:
+- File: Equipment/Equipment.yaml
+- File: Main/Main.yaml

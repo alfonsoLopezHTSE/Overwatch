@@ -1,0 +1,133 @@
+Name: Data_Types
+Type: FolderType
+Children:
+- Name: TR88_CurrentState
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "10f6d6592d70ecbfac0a1883bfab8f9f"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=c24bfe157643352054fc431c8cca699c
+- Name: UDT_Rockwell_Simple
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "43209feb82188aefc147f7a7ec587500"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=a1e66e5a8da84ee667322d549e95f654
+- Name: UDT_Modbus
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "ed552868823dd5aa89f4d104072eb07d"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=e149c315a3830c84eed93da22ad94497
+- Name: UDT_OPCUA
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "224895efa299d3ef211d14d3a7fb2f02"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=58b5c27b2fd70b38c2dab44b6b796891
+- Name: PLC_Information
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "9c080b8a56a49e9be82dc03b6b7df6ad"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=fd0495d67d756a5e248f50861b20e7bd
+- Name: Alarms
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "a91a1f23054943d28686b3c2f3f476b5"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=97e3b5e044b701c9b39b7f3135652ecc
+- Name: Equipment_Rockwell_Simple
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "35ce3c683d9f8bf230352f16eadd889e"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=a3fb7a7366c72d32ce397d44db32f801
+- Name: Equipment_Modbus
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "6d2e783dc31dd29fbe9a80f03912d1ca"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=5ff11f7ee6fbd8076c2306ae561750b3
+- Name: Equipment_OPCUA
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "a0c6b62ad33fab4583fe446ab5802658"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=466e02d61cd4bf09cd5c72979b8b9a5e
+- Name: Controls
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "5c12f1d01fb6f3e421ea9ab90ca7bfb7"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Target: g=642b64569fba615487cc178779fa6704

@@ -1,0 +1,1020 @@
+Name: Equipment
+Type: FolderType
+Children:
+- Name: PLC101_Shick
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "954edc92166f86900e614ca52d5d6e81"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PLC101_Shick
+    Id: g=409fc2c2805b69b2982307784c0b278a
+    Supertype: Equipment_Rockwell_Simple
+    Children:
+    - Name: PLC_Information
+      Type: PLC_Information
+      Children:
+      - Name: DriverStation
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"d244dc7753c009f3b3ef9ae2ed1019db","Namespace":4}
+      - Name: Type
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Shick Pre-mixer"
+      - Name: PanelID
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "156"
+      - Name: AlarmCode
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: PLCId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 101
+    - Name: Data_ToPLC
+      Type: UDT_Rockwell_Simple
+      Children:
+      - Name: B
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ValueRank: OneDimension
+        ArrayDimensions: [64]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/Plant1PLC/Tags/Controller Tags/Overwatch_ToPLC/B"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: D
+        Type: BaseDataVariableType
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [10]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/Plant1PLC/Tags/Controller Tags/Overwatch_ToPLC/D"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: R
+        Type: BaseDataVariableType
+        DataType: Float
+        ValueRank: OneDimension
+        ArrayDimensions: [10]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/Plant1PLC/Tags/Controller Tags/Overwatch_ToPLC/R"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+    - Name: Data_FromPLC
+      Type: UDT_Rockwell_Simple
+      Children:
+      - Name: B
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ValueRank: OneDimension
+        ArrayDimensions: [64]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/Plant1PLC/Tags/Controller Tags/Overwatch_FromPLC/B"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: D
+        Type: BaseDataVariableType
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [10]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/Plant1PLC/Tags/Controller Tags/Overwatch_FromPLC/D"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: R
+        Type: BaseDataVariableType
+        DataType: Float
+        ValueRank: OneDimension
+        ArrayDimensions: [10]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/Plant1PLC/Tags/Controller Tags/Overwatch_FromPLC/R"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+    - Name: TR88_CurrentState
+      Type: TR88_CurrentState
+      Children:
+      - Name: Reserved0
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Clearing
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Stopped
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Starting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Idle
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Suspended
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Execute_Run
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Stopping
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Aborting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Aborted
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Holding
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Held
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Unholding
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Suspending
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Unsuspending
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Resetting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Completing
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Complete
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved18
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved19
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved20
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved21
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved22
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved23
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved24
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved25
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved26
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved27
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved28
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved29
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved30
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved31
+        Type: BaseDataVariableType
+        DataType: Boolean
+    - Name: Alarms
+      Type: Alarms
+      Children:
+      - Name: alarmsPresent
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: alarmCode
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: alarmSource
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../PLC_Information/Description@BrowseName"
+    - Name: Controls
+      Type: Controls
+      Children:
+      - Name: DisableRemoteControl
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: EquipmentStatus
+        Type: BaseDataVariableType
+        DataType: Int32
+- Name: PLC102_Reading
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "be2ee5f34581e0ab2877ef8e812c737a"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PLC102_Reading
+    Id: g=429002b58b8fe4c1e66b14b668ed81ec
+    Supertype: Equipment_Rockwell_Simple
+    Children:
+    - Name: PLC_Information
+      Type: PLC_Information
+      Children:
+      - Name: DriverStation
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"11aeeb65f44e395b9d3c00af64950969","Namespace":4}
+      - Name: Type
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Reading"
+      - Name: PanelID
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "201"
+      - Name: AlarmCode
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: PLCId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 102
+    - Name: Data_ToPLC
+      Type: UDT_Rockwell_Simple
+      Children:
+      - Name: B
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ValueRank: OneDimension
+        ArrayDimensions: [64]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver2/PLC2/Tags/Controller Tags/Overwatch_ToPLC/B"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: D
+        Type: BaseDataVariableType
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [10]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver2/PLC2/Tags/Controller Tags/Overwatch_ToPLC/D"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: R
+        Type: BaseDataVariableType
+        DataType: Float
+        ValueRank: OneDimension
+        ArrayDimensions: [10]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver2/PLC2/Tags/Controller Tags/Overwatch_ToPLC/R"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+    - Name: Data_FromPLC
+      Type: UDT_Rockwell_Simple
+      Children:
+      - Name: B
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ValueRank: OneDimension
+        ArrayDimensions: [64]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver2/PLC2/Tags/Controller Tags/Overwatch_FromPLC/B"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: D
+        Type: BaseDataVariableType
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [10]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver2/PLC2/Tags/Controller Tags/Overwatch_FromPLC/D"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: R
+        Type: BaseDataVariableType
+        DataType: Float
+        ValueRank: OneDimension
+        ArrayDimensions: [10]
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/RAEtherNet_IPDriver2/PLC2/Tags/Controller Tags/Overwatch_FromPLC/R"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+    - Name: TR88_CurrentState
+      Type: TR88_CurrentState
+      Children:
+      - Name: Reserved0
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Clearing
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Stopped
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Starting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Idle
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Suspended
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Execute_Run
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Stopping
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Aborting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Aborted
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Holding
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Held
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Unholding
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Suspending
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Unsuspending
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Resetting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Completing
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Complete
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved18
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved19
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved20
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved21
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved22
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved23
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved24
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved25
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved26
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved27
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved28
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved29
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved30
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved31
+        Type: BaseDataVariableType
+        DataType: Boolean
+    - Name: Alarms
+      Type: Alarms
+      Children:
+      - Name: alarmsPresent
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: alarmCode
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: alarmSource
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../PLC_Information/Description@BrowseName"
+    - Name: Controls
+      Type: Controls
+      Children:
+      - Name: DisableRemoteControl
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: EquipmentStatus
+        Type: BaseDataVariableType
+        DataType: Int32
+- Name: PLC999_Modbus
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "8373e65f04ca0c4e7c4ad58c315779a5"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PLC999_Modbus
+    Id: g=28f9ec6a0a1cf676160d601f11895007
+    Supertype: Equipment_Modbus
+    Children:
+    - Name: PLC_Information
+      Type: PLC_Information
+      Children:
+      - Name: DriverStation
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"da092597b8e0f97db21bd9db12c15644","Namespace":4}
+      - Name: Type
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 1
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Modbus 999"
+      - Name: PanelID
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "164"
+      - Name: AlarmCode
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: PLCId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 999
+    - Name: TR88_CurrentState
+      Type: TR88_CurrentState
+      Children:
+      - Name: Reserved0
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Clearing
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Stopped
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Starting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Idle
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Suspended
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Execute_Run
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Stopping
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Aborting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Aborted
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Holding
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Held
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Unholding
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Suspending
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Unsuspending
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Resetting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Completing
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Complete
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved18
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved19
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved20
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved21
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved22
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved23
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved24
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved25
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved26
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved27
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved28
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved29
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved30
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved31
+        Type: BaseDataVariableType
+        DataType: Boolean
+    - Name: Alarms
+      Type: Alarms
+      Children:
+      - Name: alarmsPresent
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: alarmCode
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: alarmSource
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../PLC_Information/Description@BrowseName"
+    - Name: Data_ToPLC
+      Type: UDT_Modbus
+      Children:
+      - Name: B
+        Type: BaseObjectType
+        Children:
+        - Name: B0
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/toPLC_B0"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+      - Name: D
+        Type: BaseObjectType
+        Children:
+        - Name: D0
+          Type: BaseDataVariableType
+          DataType: Int32
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/toPLC_D0"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+    - Name: Data_FromPLC
+      Type: UDT_Modbus
+      Children:
+      - Name: B
+        Type: BaseObjectType
+        Children:
+        - Name: B0
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/fromPLC_B0"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+      - Name: D
+        Type: BaseObjectType
+        Children:
+        - Name: D0
+          Type: BaseDataVariableType
+          DataType: Int32
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/fromPLC_D0"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+    - Name: Controls
+      Type: Controls
+      Children:
+      - Name: DisableRemoteControl
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: EquipmentStatus
+        Type: BaseDataVariableType
+        DataType: Int32
+- Name: PLC998_OPCUA
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "8620543eaf755e63ab506bc1e670dd9e"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PLC998_OPCUA
+    Id: g=8f96a9ad5fb1225586dac729595896ca
+    Supertype: Equipment_OPCUA
+    Children:
+    - Name: PLC_Information
+      Type: PLC_Information
+      Children:
+      - Name: DriverStation
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"d30e714ae01305ecf9a3a4ff26576561","Namespace":4}
+      - Name: Type
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OPCUA 998"
+      - Name: PanelID
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "998-A"
+      - Name: AlarmCode
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: PLCId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 998
+    - Name: TR88_CurrentState
+      Type: TR88_CurrentState
+      Children:
+      - Name: Reserved0
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Clearing
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Stopped
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Starting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Idle
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Suspended
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Execute_Run
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Stopping
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Aborting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Aborted
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Holding
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Held
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Unholding
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Suspending
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Unsuspending
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Resetting
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Completing
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Complete
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved18
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved19
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved20
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved21
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved22
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved23
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved24
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved25
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved26
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved27
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved28
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved29
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved30
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Reserved31
+        Type: BaseDataVariableType
+        DataType: Boolean
+    - Name: Alarms
+      Type: Alarms
+      Children:
+      - Name: alarmsPresent
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: alarmCode
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: alarmSource
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../PLC_Information/Description@BrowseName"
+    - Name: Data_ToPLC
+      Type: UDT_OPCUA
+      Children:
+      - Name: B
+        Type: BaseObjectType
+        Children:
+        - Name: B0
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../OPC-UA/OPCUAClient_998/Objects/ServerInterfaces/Server interface_1/ToPLC_B[0]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+      - Name: D
+        Type: BaseObjectType
+        Children:
+        - Name: D0
+          Type: BaseDataVariableType
+          DataType: Int32
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../OPC-UA/OPCUAClient_998/Objects/ServerInterfaces/Server interface_1/ToPLC_D[0]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+    - Name: Data_FromPLC
+      Type: UDT_OPCUA
+      Children:
+      - Name: B
+        Type: BaseObjectType
+        Children:
+        - Name: B0
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../OPC-UA/OPCUAClient_998/Objects/ServerInterfaces/Server interface_1/FromPLC_B[0]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+      - Name: D
+        Type: BaseObjectType
+        Children:
+        - Name: D0
+          Type: BaseDataVariableType
+          DataType: Int32
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../OPC-UA/OPCUAClient_998/Objects/ServerInterfaces/Server interface_1/FromPLC_D[0]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+    - Name: Controls
+      Type: Controls
+      Children:
+      - Name: DisableRemoteControl
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: EquipmentStatus
+        Type: BaseDataVariableType
+        DataType: Int32
